@@ -1,0 +1,24 @@
+/*The piecewise function f(x) is defined across three distinct intervals for an integer input x:*/
+
+#include <stdio.h>
+
+int main(){
+    int x, result;
+
+    printf("Enter x: ");
+    scanf("%d", &x);
+
+    if(x < 0){
+        result = x*x + 2*x + 1;
+    }
+    else if(x >= 0 && x < 10){
+        result = 3*x + 2;
+    }
+    else{
+        result = 5*x - 7;
+    }
+
+    printf("Result = %d", result);
+
+    return 0;
+}
